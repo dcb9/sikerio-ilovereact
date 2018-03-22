@@ -9,20 +9,41 @@
   <link rel="stylesheet" type="text/css" href="/bundle/app.css">
 </head>
 <body>
+  <div id="slider-control">
+    <a href="#native" class="active">
+      <div class="dot"></div>
+    </a>
+    <a href="#touch">
+      <div class="dot"></div>
+    </a>
+    <a href="#touch">
+      <div class="dot"></div>
+    </a>
+    <a href="#async">
+      <div class="dot"></div>
+    </a>
+    <a href="#flex">
+      <div class="dot"></div>
+    </a>
+  </div>
 
   <section class="fullScreen page1">
-    <img class="react-logo" src="img/react-logo.svg" />
-    <h1>Build Native Apps With React</h1>
-    <nav>
-      <a href="#native">Native iOS </a>
-      <a href="#touch">Touch Handling</a>
-      <a href="#async">Asynchronous</a>
-      <a href="#flex">Flex &amp; Styling</a>
-    </nav>
+    <div class="overlay"></div>
+    <div class="main-content">
+      <img class="react-logo" src="img/react-logo.svg" />
+      <h1>Build Native Apps With React</h1>
+      <nav>
+        <a href="#native">Native iOS </a>
+        <a href="#touch">Touch Handling</a>
+        <a href="#async">Asynchronous</a>
+        <a href="#flex">Flex &amp; Styling</a>
+      </nav>
+    </div>
   </section>
 
   <section class="fullScreen page2">
     <div class="iphone-demo">
+      <img class="demo-screen" src="img/tumblr-demo.jpg" />
       <img src="img/iphone-frame.svg" />
     </div>
     <div class="feature-description">
@@ -38,6 +59,7 @@
   <section class="fullScreen page3">
     <div class="iphone-demo">
       <img src="img/iphone-frame.svg" />
+      <img class="demo-screen" src="img/swype-demo.jpg" />
     </div>
     <div class="feature-description">
       <h2>Touches &amp; Gestures</h2>
@@ -49,8 +71,9 @@
     </div>
   </section>
 
-  <section class="fullScreen">
+  <section class="fullScreen page4">
     <h1>Android Is Here</h1>
+    <img id="android-robot" src="img/android-robot.svg" />
   </section>
 </body>
 </html>
