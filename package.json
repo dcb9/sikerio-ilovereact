@@ -7,7 +7,8 @@
     "css": "mkdir -p bundle; yarn postcss css/app.css --watch --use autoprefixer --use postcss-import --output bundle/app.css",
     "start": "yarn lite-server",
     "clean": "rm -rf bundle",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gh-pages": "git checkout gh-pages && git rebase master && git push -f origin gh-pages:gh-pages && git checkout master"
   },
   "author": "",
   "license": "ISC",
